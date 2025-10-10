@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+}
+
+header {
+  position: relative;
+  background: #004d40;
+  color: white;
+  padding: 120px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  animation: fadeInDown 1s ease-out;
+}
+
+header p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #00695c;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  color: #37474f;
+  line-height: 1.7;
+  font-size: 1.2rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.list-inside {
+  padding-left: 1rem;
+}
+
+.mb-12 {
+  margin-bottom: 4rem;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width:950px) {
+  .vision{
+      width: 90vw !important;
+      height: auto !important;
+      padding-bottom: 30px;
+  }
+
+}
+
+.about-card{
+  /* height: 300px; */
+  /* width: 350px; */
+  border-radius: 20px;
+  /* border: 1px solid black; */
+  justify-content: space-evenly;
+  margin-left:100px;
+  box-shadow: 1px 1px 10px 1px grey;
+  transition: 2s;
+  
+}
+
+.about-card:hover{
+  background-color: rgba(116, 163, 238, 0.689);
+  color: white;
+  transform: scale(0.9);
+}

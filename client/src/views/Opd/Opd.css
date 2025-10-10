@@ -1,0 +1,83 @@
+/* src/view/Opd/Opd.css */
+
+.opd-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #e0f7fa; /* Light blue background */
+    border-radius: 10px;
+    border: 2px solid black; /* Black border for the entire form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00796b; /* Darker teal color for heading */
+    font-size: 2em; /* Larger font size for heading */
+    font-weight: bold; /* Bold font weight */
+  }
+  
+  h2 {
+    color: #00796b;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-group label {
+    width: 150px;
+    font-weight: bold; /* Bold labels */
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: calc(100% - 160px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .services-section {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  button {
+    display: block;
+    width: fit-content;
+    
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

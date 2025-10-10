@@ -1,0 +1,112 @@
+/* Container for all services */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  /* Individual service card styling */
+  .service {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+  }
+  
+  /* Image styling within service card */
+  .service img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  /* Description styling */
+  .service p {
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Hover effect for service card */
+  .service:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .services-container {
+      padding: 10px;
+    }
+  
+    .service {
+      min-width: 200px;
+    }
+  
+    .service p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service {
+      min-width: 150px;
+    }
+  
+    .service p {
+      font-size: 12px;
+    }
+  }
+.main-content {
+    padding-top: 120px; /* Adjust this value based on the height of your Navbar */
+  }
+  
+@media (screen) {
+  
+}
+
+.sai{
+  display: flex;
+  flex-wrap: wrap;
+}
+.attendants-div{
+  /* border: 2px solid red; */
+  height: 400px;
+  padding:25px;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+  margin-left: 20px;
+}
+.attendants-img{
+  height: 300px;
+width:400px ;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+.paragrap{
+  font-size: 15px;
+  /* font-size: small; */
+}
+@media screen and (max-width:390px) {
+  .attendants-div{
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 2px rgb(187, 185, 185);
+    height: 390px;
+    width: 310px;
+    padding:10px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    margin-left: px;
+    margin-right: 70px;
+  
+  } }
+

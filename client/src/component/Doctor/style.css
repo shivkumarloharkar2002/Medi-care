@@ -1,0 +1,178 @@
+/* General styles */
+body {
+  font-family: 'Public Sans', sans-serif;
+  background-color: #f8f9fa; /* Light grey background for the body */
+  color: #343a40; /* Dark grey text color for better readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Dashboard container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  background: #e9ecef; /* Slightly lighter grey background */
+  min-height: 100vh; /* Full height to cover the viewport */
+  padding: 1rem;
+}
+
+/* Header styles */
+.header {
+  background: #007bff; /* Bootstrap blue color for the header */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px; /* Rounded corners for the header */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #007bff; /* Blue border for the avatar */
+}
+
+/* Doctor list container */
+.doctor-list-container {
+  padding: 2rem;
+  background: #ffffff; /* White background for the doctor list */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card-like effect */
+  margin: 1rem 0;
+}
+
+/* Doctor list header */
+.doctor-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.add-new-button {
+  background: #28a745; /* Bootstrap green color for the button */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-new-button:hover {
+  background: #218838; /* Darker green on hover */
+}
+
+/* Doctor table */
+.doctor-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.doctor-table th, .doctor-table td {
+  padding: 1rem;
+  border: 1px solid #dee2e6; /* Light grey border */
+  text-align: left;
+}
+
+.doctor-table th {
+  background: #007bff; /* Blue background for table headers */
+  color: white;
+}
+
+.doctor-table td {
+  background: #ffffff; /* White background for table cells */
+}
+
+.doctor-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+/* Specialty styles */
+.specialty {
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.specialty.cardiologist {
+  background: linear-gradient(135deg, #ff6f6f, #ff3f3f); /* Red gradient for Cardiologists */
+}
+
+.specialty.ent-specialist {
+  background: linear-gradient(135deg, #4caf50, #388e3c); /* Green gradient for ENT Specialists */
+}
+
+/* Status styles */
+.approved {
+  color: #28a745; /* Bootstrap green color for approved status */
+}
+
+.pending {
+  color: #ffc107; /* Bootstrap yellow color for pending status */
+}
+
+.rejected {
+  color: #dc3545; /* Bootstrap red color for rejected status */
+}
+
+/* Patient info */
+.patient-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-info span {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.page-button {
+  background: #007bff; /* Blue color for pagination buttons */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 0.25rem;
+  transition: background 0.3s ease;
+}
+
+.page-button:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
+
+.page-button:disabled {
+  background: #6c757d; /* Grey color for disabled buttons */
+  cursor: not-allowed;
+}

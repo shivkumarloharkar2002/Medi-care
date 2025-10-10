@@ -1,0 +1,7 @@
+@media (max-width: 1224px) and (min-width: 767px) {
+  /* Custom styles for this range */
+  .your-custom-class {
+    /* Example */
+    font-size: 1.125rem; /* Adjust font size */
+  }
+}

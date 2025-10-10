@@ -1,0 +1,310 @@
+/* General styles */
+body {
+  font-family: 'Public Sans', sans-serif;
+  background-color: #f4f5f7;
+  /* Slightly lighter grey for a softer look */
+  color: #343a40;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dashboard container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  background: #f1f3f5;
+  /* Even lighter grey for subtle contrast */
+  min-height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  /* Increased padding for a more spacious layout */
+}
+
+/* Header styles */
+.header {
+  background: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  /* Increased padding for better spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  /* More rounded corners for a modern feel */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* Added subtle shadow for depth */
+}
+
+.logo {
+  font-size: 1.75rem;
+  /* Slightly larger logo */
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  /* Increased gap for better spacing */
+}
+
+.user-avatar {
+  width: 48px;
+  /* Larger avatar */
+  height: 48px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+}
+
+/* Doctor list container */
+.doctor-list-container {
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  /* More rounded corners */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  /* Deeper shadow for card-like effect */
+  margin: 2rem 0;
+  /* Increased margin for better spacing */
+}
+
+/* Doctor list header */
+.doctor-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  /* Increased margin for better spacing */
+}
+
+.add-new-button {
+  background: #28a745;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  /* Larger padding for a more prominent button */
+  border: none;
+  border-radius: 6px;
+  /* More rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-new-button:hover {
+  background: #218838;
+}
+
+/* Doctor table */
+.doctor-table {
+  width: 100%;
+  border-collapse: separate;
+  /* Changed from collapse to separate for better spacing */
+  border-spacing: 0 0.5rem;
+  /* Added spacing between rows */
+}
+
+.doctor-table th,
+.doctor-table td {
+  padding: 1rem;
+  border: none;
+  /* Removed borders for a cleaner look */
+  text-align: left;
+}
+
+.doctor-table th {
+  background: #007bff;
+  color: white;
+  border-radius: 8px 8px 0 0;
+  /* Rounded top corners for headers */
+  text-transform: uppercase;
+  /* Uppercase headers for emphasis */
+}
+
+.doctor-table td {
+  background: #ffffff;
+  border-radius: 8px;
+  /* Rounded corners for table cells */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  /* Subtle shadow for table rows */
+}
+
+.doctor-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+/* Specialty styles */
+.specialty {
+  height: 80px;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  align-self: center;
+}
+
+.specialty-button {
+  height: 60px;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.specialty.consultant-physician {
+  background: linear-gradient(135deg, #00796b, #004d40);
+
+  /* Teal to dark teal gradient */
+}
+
+
+.specialty.orthopedic---spine {
+  background: linear-gradient(135deg, #0052cc, #e0e0e0);
+  /* Dark blue to light gray gradient */
+}
+
+.specialty.neuro-surgery {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  /* Light cyan to deep blue gradient */
+}
+
+
+
+.specialty.gastroenterology {
+  background: linear-gradient(135deg, #a5d6a7, #43a047);
+  /* Light green to dark green gradient */
+}
+
+.specialty.cardiology {
+  background: linear-gradient(135deg, #e57373, #c62828);
+  /* Neutral red gradient */
+}
+
+
+
+.specialty.pediatric {
+  background: linear-gradient(135deg, #fbc2eb, #a18cd1);
+  /*  purple, and light blue gradient */
+}
+
+.specialty.gynac---obstretic {
+  background: linear-gradient(135deg, #ff6b6b, #fbc2eb);
+  /* Warm coral to soft lavender gradient */
+}
+
+.specialty.general-surgery {
+  background: linear-gradient(135deg, #1976d2, #90a4ae);
+  /* Blue to light gray gradient */
+}
+
+.specialty.skin--cosmo---trico- {
+  background: linear-gradient(135deg, #f5c6aa, #f1e3d3);
+  /* Warm peach to light beige gradient */
+}
+
+
+.specialty.anathesia {
+  background: linear-gradient(135deg, #009688, #3f51b5);
+  /* Teal to calming blue gradient */
+}
+
+
+
+
+
+
+/* Status styles */
+.approved {
+  color: #28a745;
+}
+
+.pending {
+  color: #ffc107;
+}
+
+.rejected {
+  color: #dc3545;
+}
+
+/* Patient info */
+.patient-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-info span {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  /* Increased margin for better spacing */
+}
+
+.page-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  /* Larger buttons for easier clicking */
+  border-radius: 6px;
+  /* More rounded corners */
+  cursor: pointer;
+  margin: 0 0.5rem;
+  /* Increased margin for better spacing */
+  transition: background 0.3s ease, transform 0.2s ease;
+  /* Added transform transition */
+}
+
+.page-button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  /* Subtle lift effect on hover */
+}
+
+.page-button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+  /* No lift effect on disabled buttons */
+}
+
+
+.book-appointment-button {
+  background: #ffc107;
+  /* Yellow color for the booking button */
+  color: #343a40;
+  /* Dark grey text color */
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.book-appointment-button:hover {
+  background: #e0a800;
+  /* Darker yellow on hover */
+}
+
+
+@media screen {
+  /* Dashboard container */
+.dashboard-container {
+  padding: 5px;
+  /* Increased padding for a more spacious layout */
+}
+}
